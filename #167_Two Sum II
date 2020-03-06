@@ -15,7 +15,7 @@ class Solution {
             {                
                 ans[0]=head+1;
                 ans[1]=tail+1;
-                break;//set break there, in case the situation of two same number adding
+                break;//set break there, in case the situation of same number adding twice
             } 
         }
         return ans;
