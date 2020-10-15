@@ -34,16 +34,15 @@ public:
             parti->next = NULL;
             max--;
         }
-        while((k-max2)>0)
+        while((k-max2)!=0)
         {
-            ListNode* parti = root;
-            if(parti==NULL)
+            if(root==NULL)
             {
                 list.push_back(NULL);
-                max2++;
             }
             else
             {
+                ListNode* parti = root;
                 for(int i=0;i<sum-1;i++)
                 {   
                     parti=parti->next;
@@ -51,11 +50,9 @@ public:
                 list.push_back(root);
                 root = parti->next;
                 parti->next = NULL;
-                max2++;
             }
-           
+            max2++;
         }
         return list;
-        
     }
 };
