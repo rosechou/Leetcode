@@ -38,9 +38,7 @@ public:
             {
                 return false;
             }
-            int left = height(root->left);
-            int right = height(root->right);
-            if(abs(left-right)<2)
+            if(abs(height(root->left)-height(root->right))<2)
             {
                 return true;
             }
