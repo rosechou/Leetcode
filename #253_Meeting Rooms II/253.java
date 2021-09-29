@@ -1,5 +1,8 @@
 class Solution {
     public int minMeetingRooms(int[][] intervals) {
+        if(intervals.length == 0){
+            return 0;
+        }
         int maxNum = max(intervals);
         // int minNum = min(intervals);
         int[] roomsTime = new int[maxNum+1];
